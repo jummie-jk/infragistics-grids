@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PaginationGridComponent } from './pagination-grid/pagination-grid.component';
+import { PaginationGridComponent } from './grid/pagination-grid/pagination-grid.component';
 import { HttpClientModule } from '@angular/common/http';
 import {
   IgxAvatarModule,
@@ -24,6 +24,7 @@ import {
 import { GridSortingIndicatorsComponent } from './grid/grid-sorting-indicators/grid-sorting-indicators.component';
 import { IgxPreventDocumentScrollModule } from './directives/prevent-scroll.directive';
 import { GridAdvancedFilteringComponent } from './grid/grid-advanced-filtering/grid-advanced-filtering.component';
+import { GridEditingComponent } from './grid/grid-editing/grid-editing.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { GridAdvancedFilteringComponent } from './grid/grid-advanced-filtering/g
     PaginationGridComponent,
     GridSortingIndicatorsComponent,
     GridAdvancedFilteringComponent,
+    GridEditingComponent,
   ],
   imports: [
     BrowserModule,
