@@ -23,6 +23,7 @@ import {
 } from 'igniteui-angular';
 import { GridSortingIndicatorsComponent } from './grid/grid-sorting-indicators/grid-sorting-indicators.component';
 import { IgxPreventDocumentScrollModule } from './directives/prevent-scroll.directive';
+import { GridAdvancedFilteringComponent } from './grid/grid-advanced-filtering/grid-advanced-filtering.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { IgxPreventDocumentScrollModule } from './directives/prevent-scroll.dire
     NavbarComponent,
     PaginationGridComponent,
     GridSortingIndicatorsComponent,
+    GridAdvancedFilteringComponent,
   ],
   imports: [
     BrowserModule,
