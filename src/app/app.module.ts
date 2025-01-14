@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,11 +18,19 @@ import {
   IgxProgressBarModule,
   IgxRippleModule,
   IgxSwitchModule,
+  IgxSelectModule,
+  IgxSimpleComboModule,
 } from 'igniteui-angular';
-import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
+import { GridSortingIndicatorsComponent } from './grid/grid-sorting-indicators/grid-sorting-indicators.component';
+import { IgxPreventDocumentScrollModule } from './directives/prevent-scroll.directive';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PaginationGridComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    PaginationGridComponent,
+    GridSortingIndicatorsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -39,8 +47,22 @@ import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.dire
     IgxRippleModule,
     IgxSwitchModule,
     IgxPreventDocumentScrollModule,
+    IgxSelectModule,
+    IgxSimpleComboModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    IgxPreventDocumentScrollModule,
+    IgxGridModule,
+    IgxRippleModule,
+    IgxIconModule,
+    IgxInputGroupModule,
+    IgxSelectModule,
+    IgxSimpleComboModule,
+    IgxButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
